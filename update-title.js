@@ -9,9 +9,8 @@ Hooks.on("init", function() {
 	  config: true,        // This specifies that the setting appears in the configuration view
 	  default: "test",		// The default value for the setting
 	  type: String,
-	  onChange: updateTitle; // A callback function which triggers when the setting is changed	
+	  onChange: updateTitle, // A callback function which triggers when the setting is changed
 	});	
-	
 });
 
 Hooks.on("renderApplication", function() {
