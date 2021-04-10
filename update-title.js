@@ -39,6 +39,10 @@ function updateTitle(){
 }
 
 function updateIcon(){
-	var link = 	document.querySelector("link[rel='icon']")
+	var link = 	document.querySelector("link[rel='icon']");
 	console.log(link);
+	if (link){
+		link.href = game.settings.register("update-title", "pageicon");
+		console.log("Updated icon to" + game.settings.register("update-title", "pageicon"));
+	} 
 }
