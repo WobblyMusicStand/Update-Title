@@ -1,9 +1,3 @@
-var
-
-function updateTitle(){
-	document.title = game.settings.get("update-title", "pagetitle");
-}
-
 /* Call back after init to include module settings.
 */
 Hooks.on("init", function() {
@@ -24,3 +18,7 @@ Hooks.on("renderApplication", function() {
   console.log("This code runs when Foundry VTT renders a scene.");
   updateTitle();
 });
+
+function updateTitle(){
+	document.title = game.settings.get("update-title", "pagetitle");
+}
