@@ -7,7 +7,7 @@ Hooks.on("init", function() {
 	  hint: "The title that appears on the browser tab",
 	  scope: "world",     // This specifies a client-stored setting
 	  config: true,        // This specifies that the setting appears in the configuration view
-	  default: "test",		// The default value for the setting
+	  default: "",		// The default value for the setting
 	  type: String,
 	  onChange: updateTitle, // A callback function which triggers when the setting is changed
 	});	
@@ -35,7 +35,10 @@ function updateTab(){
 }
 
 function updateTitle(){
-	document.title = game.settings.get("update-title", "pagetitle");
+	var title = game.settings.get("update-title", "pagetitle");
+	if (title) {
+		document.title = title;
+	}
 }
 
 function updateIcon(){
