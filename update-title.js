@@ -25,7 +25,7 @@ Hooks.on("init", function() {
 });
 
 Hooks.on("renderApplication", function() {
-  console.log("This code runs when Foundry VTT renders a scene.");
+  //console.log("This code runs when Foundry VTT renders a scene.");
   updateTab();
 });
 
@@ -43,7 +43,7 @@ function updateTitle(){
 
 function updateIcon(){
 	var link = 	document.querySelector("link[rel='icon']");
-	console.log(link);
+	//console.log(link);
 	if (link){
 		link.href = game.settings.get("update-title", "pageicon");
 		console.log("Updated icon to" + game.settings.get("update-title", "pageicon"));
