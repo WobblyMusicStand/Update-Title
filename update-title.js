@@ -2,4 +2,7 @@ function updateTitle(){
 	document.title = 'New Title!';
 }
 
-window.onload = updateTitle();
+Hooks.on("init", function() {
+  console.log("This code runs once the Foundry VTT software begins it's initialization workflow.");
+  updateTitle();
+});

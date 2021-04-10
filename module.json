@@ -3,13 +3,13 @@
   "title": "Update Title",
   "description": "Update the title bar icon and description",
   "author": "WobblyMusicStand",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minimumCoreVersion": "0.7.9",
   "compatibleCoreVersion": "0.7.9",
   "url": "https://github.com/WobblyMusicStand/Update-Title",
   "manifest": "https://raw.githubusercontent.com/WobblyMusicStand/Update-Title/main/module.json",
   "download": "https://github.com/WobblyMusicStand/Update-Title/archive/refs/heads/main.zip",
-  "styles": [
-    "update-title.css"
+  "scripts": [
+    "update-title.js"
   ]
 }
