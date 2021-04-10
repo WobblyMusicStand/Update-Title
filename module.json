@@ -8,7 +8,7 @@
   "compatibleCoreVersion": "0.7.9",
   "url": "https://github.com/WobblyMusicStand/Update-Title",
   "manifest": "https://raw.githubusercontent.com/WobblyMusicStand/Update-Title/main/module.json",
-  "download": "",
+  "download": "https://github.com/WobblyMusicStand/Update-Title/archive/refs/heads/main.zip",
   "styles": [
     "update-title.css"
   ]
